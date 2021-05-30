@@ -1,0 +1,35 @@
+.employee-container{
+    padding: 30px;
+    .mat-card-header{
+      padding: 13px;
+      .title{
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .form{
+        input{
+          background: transparent;
+          border: 1px solid #dcdcdc;
+          padding-left: 5px;
+          height: 40px;
+          border-radius: 12px;
+        }
+      }
+    }
+    table{
+      box-shadow: none;
+      width: 100%;
+    }
+    .employee-leave-system{
+      width: 100%;
+      padding: 5px;
+      mat-card{
+        .mat-card-header{
+          .title{
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+  
