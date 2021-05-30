@@ -1,0 +1,22 @@
+.status-container{
+    padding: 20px;
+    mat-card{
+      table{
+        width: 100%;
+        box-shadow: none;
+      }
+    }
+    .card-container{
+      padding: 10px;
+      mat-card{
+        .card-detail{
+          padding: 10px 5px;
+          mat-card{
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  
+  
