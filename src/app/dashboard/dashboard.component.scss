@@ -1,0 +1,81 @@
+.dashboard-container{
+    padding: 30px;
+    .card-container{
+      padding: 20px;
+      .card{
+        width: 300px;
+        height: 120px;
+        padding: 20px 40px;
+        border-radius: 8px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+        .icon{
+  
+        }
+        .title{
+          width: 200px;
+          .text{
+            width: 200px;
+          }
+        }
+      }
+    }
+    .product-analysis{
+  
+    }
+    .table-container{
+  
+      mat-card{
+        span{
+          padding: 20px;
+          font-size: 15px;
+          font-weight: bold;
+        }
+        padding: 20px;
+        box-shadow: 3px 3px 5px 6px #ccc;
+  
+        table{
+          width: 100%;
+          box-shadow: none;
+        }
+      }
+    }
+    .card{
+      mat-card{
+        padding: 20px;
+        .title{
+          width: 20%;
+        }
+        .date{
+          width: 80%;
+        }
+        table{
+          width: 100%;
+          box-shadow: none;
+        }
+        .schedule-container{
+          padding-top: 20px;
+          border-bottom: 1px solid #e7e7e7;
+          .date{
+            padding: 20px;
+            font-weight: lighter;
+            font-size: 18px;
+          }
+          .event{
+            padding: 20px;
+            font-weight: bold;
+            font-size: 12px;
+          }
+          .event-container{
+            padding: 20px;
+            span{
+              background: #0275d8;
+              padding: 7px;
+              border-radius: 7px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  

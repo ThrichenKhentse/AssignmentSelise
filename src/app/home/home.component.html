@@ -1,0 +1,100 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <mat-toolbar fxLayoutAlign="center center"><mat-icon>spa</mat-icon> container</mat-toolbar>
+        <div class="sidenav-container">
+          <div class="profile-card" fxLayout="row">
+            <div class="profile-img">
+              <div class="profile">
+                <img src="../../assets/157591850_1022582661606373_5080273166738851551_n.jpg">
+              </div>
+            </div>
+            <div class="profile-details" fxLayout="column" fxLayoutAlign="center start">
+                <span class="name">Thrichen Khentse</span>
+              <div class="sub-title" fxLayoutAlign="center center">Employee <mat-icon>trip_origin</mat-icon></div>
+  
+            </div>
+          </div>
+          <div class="button" fxLayoutAlign="start center">
+              <button mat-button>Add Project</button>
+          </div>
+          <div class="navigation" fxLayout="column" fxLayoutGap="20px">
+            <div class="nav-container" fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="15px">
+             <a routerLink="/" fxLayoutAlign="start center" fxLayoutGap="15px" >
+               <mat-icon>desktop_windows</mat-icon>
+               <span>Dashboard</span>
+             </a>
+            </div>
+            <div class="nav-container" fxLayoutAlign="start center" fxLayout="row" >
+              <a routerLink="/employee" fxLayoutAlign="start center" fxLayoutGap="15px">
+                <mat-icon>person</mat-icon>
+                <span>Employee</span> </a>
+            </div>
+            <div class="nav-container" fxLayoutAlign="start center" fxLayout="row" >
+              <a routerLink="/toDo" fxLayoutAlign="start center" fxLayoutGap="15px">
+                <mat-icon>inventory</mat-icon>
+                <span>To Do</span>
+              </a>
+  
+            </div>
+            <div class="nav-container" fxLayoutAlign="start center" fxLayout="row" >
+             <a routerLink="/status"  fxLayoutAlign="start center" fxLayoutGap="15px">
+               <mat-icon>show_chart</mat-icon>
+               <span>Status</span>
+             </a>
+            </div>
+            <div class="nav-container" fxLayoutAlign="start center" fxLayout="row" fxLayoutGap="15px">
+              <mat-icon>logout</mat-icon>
+              <span>Log Out</span>
+            </div>
+          </div>
+        </div>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+  
+      <mat-toolbar class="mat-toolbar" fxLayout="row">
+        <div fxFlex.gt-sm="20%" fxLayout="row">
+          <button (click)="drawer.toggle(); toggle()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" *ngIf="open">arrow_back_ios</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" *ngIf="!open">menu</mat-icon>
+          </button>
+          <div class="link-list" fxHide.lt-md>
+            <ul fxLayoutGap="7px">
+              <li>
+                Schedule
+              </li>
+              <li>
+                Report
+              </li>
+              <li>
+                schedule
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-bar" fxFlex="40%" fxLayoutAlign.gt-sm="end center" fxHide.lt-md>
+          <input type="text" placeholder="search..." fxFlex.gt-sm="60%">
+        </div>
+        <div class="actions" fxLayoutAlign="start center" fxLayoutAlign.gt-sm="end center" fxLayout="row" fxLayoutGap.gt-sm="20px" fxFlex="20%" fxFlex.gt-sm="40%">
+          <div fxLayout="row" fxLayoutGap="30px" >
+            <mat-icon matBadge="15" matBadgeColor="warn">description</mat-icon>
+            <mat-icon matBadge="15" matBadgeColor="warn">notifications</mat-icon>
+            <mat-icon >tune</mat-icon>
+          </div>
+          <div fxLayout="row"  fxLayoutGap.gt-sm="10px">
+            <span class="username" fxLayoutAlign="center center">Thrichen Khentse</span>
+            <div class="user-profile">
+              <img src="../../assets/157591850_1022582661606373_5080273166738851551_n.jpg">
+            </div>
+          </div>
+        </div>
+      </mat-toolbar>
+      <div>
+        <router-outlet>
+  
+        </router-outlet>
+      </div>
+    </div>
+  
+  </mat-drawer-container>
+  

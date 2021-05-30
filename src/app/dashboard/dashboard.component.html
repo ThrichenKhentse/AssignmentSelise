@@ -1,0 +1,200 @@
+<div class="dashboard-container" fxLayout="column" fxLayoutGap="30px">
+    <div class="card-container" fxLayout="column" fxLayout.gt-md="row" fxLayoutAlign="center center" fxLayoutGap="10px" fxLayoutGap.gt-sm="80px">
+      <div class="card" fxLayoutAlign="start center">
+  
+        <div fxLayout="row">
+          <div class="icon">
+            <mat-icon>airplanemode_active</mat-icon>
+          </div>
+          <div class="title" fxLayout="column" fxLayoutGap="10px">
+            <div class="text" fxLayoutAlign="center end">On Leave</div>
+            <div class="number" fxLayoutAlign="center center">30</div>
+          </div>
+        </div>
+        <div>
+  
+        </div>
+  
+      </div>
+      <div class="card" fxLayoutAlign="start center">
+  
+        <div fxLayout="row">
+          <div class="icon">
+            <mat-icon>person</mat-icon>
+          </div>
+          <div class="title" fxLayout="column" fxLayoutGap="10px">
+            <div class="text" fxLayoutAlign="center end">Number of Employee</div>
+            <div class="number" fxLayoutAlign="center center">30</div>
+          </div>
+        </div>
+        <div>
+  
+        </div>
+  
+      </div>
+      <div class="card" fxLayoutAlign="start center">
+  
+        <div fxLayout="row">
+          <div class="icon">
+            <mat-icon>airplanemode_active</mat-icon>
+          </div>
+          <div class="title" fxLayout="column" fxLayoutGap="10px">
+            <div class="text" fxLayoutAlign="center end">Number of Project</div>
+            <div class="number" fxLayoutAlign="center center">30</div>
+          </div>
+        </div>
+        <div>
+  
+        </div>
+  
+      </div>
+      <div class="card" fxLayoutAlign="start center">
+  
+        <div fxLayout="row">
+          <div class="icon">
+            <mat-icon>airplanemode_active</mat-icon>
+          </div>
+          <div class="title" fxLayout="column" fxLayoutGap="10px">
+            <div class="text" fxLayoutAlign="center end">On Leave</div>
+            <div class="number" fxLayoutAlign="center center">30</div>
+          </div>
+        </div>
+        <div>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="table-container">
+  
+      <mat-card>
+        <span>Employee</span>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="project">
+            <th mat-header-cell *matHeaderCellDef> Projects </th>
+            <td mat-cell *matCellDef="let element"> {{element.project}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> Title </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let element"> {{element.Status}} </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+      </mat-card>
+    </div>
+    <div class="card" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
+      <mat-card fxLayout="column" fxFlex="40%" fxFlex.lt-md="100%">
+        <div fxLayout="row">
+          <div class="title" fxLayoutAlign="start center ">Meeting Room</div>
+          <div class="date" fxLayoutAlign="end center">10-10-2021</div>
+        </div>
+        <table mat-table [dataSource]="dataSourceRoom" class="mat-elevation-z8">
+  
+  
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="project">
+            <th mat-header-cell *matHeaderCellDef> Projects </th>
+            <td mat-cell *matCellDef="let element"> {{element.project}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> Title </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+  
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsRoom"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsRoom;"></tr>
+        </table>
+      </mat-card>
+      <mat-card fxLayout="column">
+        <div fxLayout="row">
+          <div class="title" fxLayoutAlign="start center ">Schedule</div>
+        </div>
+        <div class="schedule-container">
+         <div fxLayout="row">
+           <div class="date">10 OCT 2021</div>
+           <div class="event">Events</div>
+         </div>
+          <div class="event-container">
+            <p>Project: Name</p>
+            <p>Event: Meeting with client</p>
+            <span>2:30pm</span>
+          </div>
+        </div>
+        <div class="schedule-container">
+          <div fxLayout="row">
+            <div class="date">11 OCT 2021</div>
+            <div class="event">Events</div>
+          </div>
+          <div class="event-container">
+            <p>Project: Name</p>
+            <p>Event: Meeting with client</p>
+            <span>3:30pm</span>
+          </div>
+        </div>
+  
+      </mat-card>
+      <mat-card fxLayout="column">
+        <div fxLayout="row">
+          <div class="title" fxLayoutAlign="start center ">Interview</div>
+          <div class="date" fxLayoutAlign="end center">10-10-2021</div>
+        </div>
+        <table mat-table [dataSource]="dataSourceInterview" class="mat-elevation-z8">
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Interviewee </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="interviewerName">
+            <th mat-header-cell *matHeaderCellDef> Interviewer </th>
+            <td mat-cell *matCellDef="let element"> {{element.interviewerName}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef> Title </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="time">
+            <th mat-header-cell *matHeaderCellDef> Time </th>
+            <td mat-cell *matCellDef="let element"> {{element.time}} </td>
+          </ng-container>
+  
+          <tr mat-header-row *matHeaderRowDef="displayedColumnsInterview"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumnsInterview;"></tr>
+        </table>
+      </mat-card>
+    </div>
+  </div>
+  
