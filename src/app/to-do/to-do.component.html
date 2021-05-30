@@ -1,1 +1,153 @@
-<p>to-do works!</p>
+<div class="to-do-container" fxLayout="column">
+    <div fxLayout.gt-sm="row" fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="15px">
+      <mat-card fxLayout="column" fxFlex.lt-md="100%" fxFlex="30%">
+        <div fxLayout="row" >
+          <div class="title">To Do</div>
+          <div class="icon" fxLayout="row" fxLayoutAlign="end end">
+            <mat-icon class="add">add</mat-icon>
+            <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Edit column</button>
+              <button mat-menu-item>Delete column</button>
+            </mat-menu>
+          </div>
+        </div>
+        <div class="form">
+          <mat-form-field appearance="outline">
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <div  class="button-holder" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
+            <button class="add" mat-button>Add</button>
+            <button class="cancel" mat-button>Cancel</button>
+          </div>
+          <div class="card-holder">
+            <div class="mat-card" fxLayout="column">
+              <div fxLayout="row" fxLayoutGap="8px">
+               <div fxLayout="row" fxLayoutGap="8px">
+                 <mat-icon>sticky_note_2</mat-icon>
+                 <div class="sub-title">Topic</div>
+               </div>
+                <div class="icon" fxLayoutAlign="end end">
+                  <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Edit column</button>
+                    <button mat-menu-item>Delete column</button>
+                  </mat-menu>
+                </div>
+              </div>
+              <div class="description">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+      <mat-card fxLayout="column">
+        <div fxLayout="row">
+          <div class="title">Progress</div>
+          <div class="icon" fxLayout="row" fxLayoutAlign="end end">
+            <mat-icon class="add">add</mat-icon>
+  
+            <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Edit column</button>
+              <button mat-menu-item>Delete column</button>
+            </mat-menu>
+  
+          </div>
+        </div>
+        <div class="form">
+          <mat-form-field appearance="outline">
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <div  class="button-holder" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
+            <button class="add" mat-button>Add</button>
+            <button class="cancel" mat-button>Cancel</button>
+          </div>
+          <div class="card-holder">
+            <div class="mat-card" fxLayout="column">
+              <div fxLayout="row" fxLayoutGap="8px">
+                <div fxLayout="row" fxLayoutGap="8px">
+                  <mat-icon>sticky_note_2</mat-icon>
+                  <div class="sub-title">Topic</div>
+                </div>
+                <div class="icon" fxLayoutAlign="end end">
+                  <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Edit column</button>
+                    <button mat-menu-item>Delete column</button>
+                  </mat-menu>
+                </div>
+              </div>
+              <div class="description">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+      <mat-card fxLayout="column">
+        <div fxLayout="row">
+          <div class="title">Done</div>
+          <div class="icon" fxLayout="row" fxLayoutAlign="end end">
+            <mat-icon class="add">add</mat-icon>
+            <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Edit column</button>
+              <button mat-menu-item>Delete column</button>
+            </mat-menu>
+          </div>
+        </div>
+        <div class="form">
+          <mat-form-field appearance="outline">
+            <textarea matInput></textarea>
+          </mat-form-field>
+          <div  class="button-holder" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="center center">
+            <button class="add" mat-button>Add</button>
+            <button class="cancel" mat-button>Cancel</button>
+          </div>
+          <div class="card-holder">
+            <div class="mat-card" fxLayout="column">
+              <div fxLayout="row" fxLayoutGap="8px">
+                <div fxLayout="row" fxLayoutGap="8px">
+                  <mat-icon>sticky_note_2</mat-icon>
+                  <div class="sub-title">Topic</div>
+                </div>
+                <div class="icon" fxLayoutAlign="end end">
+                  <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Edit column</button>
+                    <button mat-menu-item>Delete column</button>
+                  </mat-menu>
+                </div>
+              </div>
+              <div class="description">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              </div>
+            </div>
+          </div>
+          <div class="card-holder">
+            <div class="mat-card" fxLayout="column">
+              <div fxLayout="row" fxLayoutGap="8px">
+                <div fxLayout="row" fxLayoutGap="8px">
+                  <mat-icon>sticky_note_2</mat-icon>
+                  <div class="sub-title">Topic</div>
+                </div>
+                <div class="icon" fxLayoutAlign="end end">
+                  <span fxLayoutAlign="center center" [matMenuTriggerFor]="menu"><mat-icon class="more">more_horiz</mat-icon></span>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Edit column</button>
+                    <button mat-menu-item>Delete column</button>
+                  </mat-menu>
+                </div>
+              </div>
+              <div class="description">
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  

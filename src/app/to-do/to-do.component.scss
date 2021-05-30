@@ -1,0 +1,55 @@
+.to-do-container{
+    padding: 30px;
+    .more{
+      cursor: pointer;
+    }
+    .add{
+      cursor: pointer;
+    }
+    mat-card{
+      padding: 15px;
+        .title{
+          font-weight: bold;
+          font-size: 16px;
+      }
+      .icon{
+        width: 90%;
+      }
+      .form{
+        padding-top: 30px;
+        mat-form-field{
+          width: 100%;
+          textarea{
+            resize: none;
+          }
+        }
+        .button-holder{
+          width: 100%;
+          button{
+            width: 50%;
+  
+          }
+          .add{
+            background: #0275d8;
+            color: #fff;
+          }
+          .cancel{
+            border: 1px solid black;
+          }
+        }
+        .card-holder{
+          padding-top: 20px;
+          mat-icon{
+            color: #8e8e8e;
+          }
+          .sub-title{
+            font-size: 15px;
+          }
+          .description{
+            padding: 20px 5px;
+          }
+        }
+      }
+    }
+  }
+  
